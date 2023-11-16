@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_radio.css">
+    <script src="https://kit.fontawesome.com/eba7b6c0e5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="radio.html"><i class="fa-solid fa-radio"></i>Semua</a></li>
+                <li><a href="musik.html"><i class="fa-solid fa-music"></i>Musik</a></li>
+                <li><a href="berita.html"><i class="fa-regular fa-newspaper"></i>Berita</a></li>
+            </ul>
+        </div>
+        <div class="radio-station">
+            <h1 class="web-name">Radio Streaming Online</h1>
+
+            <div class="station-info">
+                <h2 id="station-name">Station Name</h2>
+            </div>
+
+            <div class="station-buttons">
+                <button class="station-button" data-url="http://202.147.199.98/;stream.nsv" data-name="Global Radio">Global Radio</button>
+                <button class="station-button" data-url="http://ice2.somafm.com/folkfwd-128-mp3" data-name="SomaFM Folk Forward">SomaFM Folk Forward</button>
+                <button class="station-button" data-url="http://stream-dc1.radioparadise.com/aac-320" data-name="Radio Paradise">Radio Paradise</button>
+                <button class="station-button" data-url="http://202.147.199.101:8000/;stream.nsv" data-name="Sindo Trijaya FM">Sindo Trijaya FM</button>
+                <button class="station-button" data-url="http://45.64.97.211:1031/;stream.nsv" data-name="Radio Bandung">Radio Bandung</button>
+            </div>
+            <div class="add-radio-form">
+                <h3>Add New Radio Station</h3>
+                <form id="add-radio-form">
+                    <input type="text" id="radio-name" name="radioName" placeholder="Radio Name" required>
+            
+                    <input type="url" id="streaming-link" name="streamingLink" placeholder="Streaming Link" required>
+            
+                    <button type="button" class="add-radio-button" onclick="addRadio()">Add Radio</button>
+                </form>
+            </div>
+
+            <audio id="radio" class="audio-player" controls autoplay>
+                <source src="" type="audio/mpeg">
+            </audio>
+            <div class="radio-control">
+                <a href="#" id="previous"><i class="fa-solid fa-backward fa-xl" style="color: #ebedef;"></i></a>
+                <a href="#" id="play-pause"><i class="fa-solid fa-play fa-2xl" style="color: #ebedef;"></i></a>
+                <a href="#" id="next"><i class="fa-solid fa-forward fa-xl" style="color: #ebedef;"></i></a>
+                <a href="#" id="volume-down"><i class="fa-solid fa-minus fa-xl" style="color: #ebedef;"></i></a>  
+                <a href="#" id="volume-up"><i class="fa-solid fa-plus fa-xl" style="color: #ebedef;"></i></a>
+                
+                <span id="volume-value">50</span>     
+            </div> 
+        </div>
+
+        <div class="bubbles">
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:19;"></span>
+        </div>
+    </div>
+
+    <script src="script_radio.js"></script>
+</body>
+</html>
