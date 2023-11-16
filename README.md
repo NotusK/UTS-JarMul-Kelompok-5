@@ -12,3 +12,6 @@ Radio Streaming Website ini memiliki 10 radio channel yang dapat yang dapat dita
 # Feature Radio
 Image Converter Website ini dapat mengkompres gambar dengan kualitas yang bisa diatur. Juga bisa memodifikasi resolusi gambar, format gambar, dan nama gambar yang lalu dapat di download.
 
+# How to Run
+Jalankan file index.html pada web browser (Chrome Recommended).
+
